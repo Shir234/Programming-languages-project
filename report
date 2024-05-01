@@ -66,20 +66,29 @@ For example, for the test case (declare x 10), the output might be x = 10, indic
 The language we implemented in the interpreter is dynamically typed.
 In a dynamically typed language, variable types are determined at runtime rather than compile time.
 Variable Declarations and Assignments:
-•	It allows variable declarations using the declare keyword, but it doesn't specify the type explicitly. For example, declare x 10 creates a variable x with the value 10, but it doesn't specify whether x is an integer, float, or any other type.
-•	Similarly, variable assignments using the set keyword don't require specifying the type. For example, set x 20 changes the value of variable x to 20, regardless of its original type.
+•	It allows variable declarations using the declare keyword, but it doesn't specify the type explicitly. For example, declare x 10 creates a variable x with 
+the value 10, but it doesn't specify whether x is an integer, float, or any other type.
+•	Similarly, variable assignments using the set keyword don't require specifying the type. For example, set x 20 changes the value of variable x to 20, regardless 
+of its original type.
+
 Implicit Type Conversion:
-•	the language doesn't enforce strict type checking. Operations such as addition (+), subtraction (-), multiplication (*), and division (/) can be performed on variables without checking their types beforehand.
+•	the language doesn't enforce strict type checking. Operations such as addition (+), subtraction (-), multiplication (*), and division (/) can be performed on 
+variables without checking their types beforehand.
 •	We only support integers, but if we add more variable types- we could support (+ 10.5 20) and more operations between different types.
 
 
 Part B – Question 14
-Lazy evaluation and eager evaluation are two strategies used in programming to handle the evaluation of expressions. Lazy evaluation delays the evaluation of expressions until their results are actually needed, while eager evaluation evaluates expressions as soon as they are bound to a variable.
+Lazy evaluation and eager evaluation are two strategies used in programming to handle the evaluation of expressions. Lazy evaluation delays the evaluation of 
+expressions until their results are actually needed, while eager evaluation evaluates expressions as soon as they are bound to a variable.
 
-In practical terms, the program provided has a function called generate_values() that produces a sequence of numbers, and another function called square(x) that squares a number. 
+In practical terms, the program provided has a function called generate_values() that produces a sequence of numbers, and another function called square(x) 
+that squares a number. 
 
-In eager evaluation, we first generate all the numbers using generate_values(), storing them in memory, and then square each of them. This approach consumes memory and computational resources upfront, even if not all generated values are ultimately needed.
-In contrast, lazy evaluation defers the generation of values until they are required. Rather than generating and storing all numbers immediately, we generate each number only when it's needed, such as when it's about to be squared. This approach conserves resources, especially when dealing with large sequences or potentially infinite lists, as it avoids unnecessary computation and memory usage until necessary.
+In eager evaluation, we first generate all the numbers using generate_values(), storing them in memory, and then square each of them. This approach consumes 
+memory and computational resources upfront, even if not all generated values are ultimately needed.
+In contrast, lazy evaluation defers the generation of values until they are required. Rather than generating and storing all numbers immediately, we generate 
+each number only when it's needed, such as when it's about to be squared. This approach conserves resources, especially when dealing with large sequences or 
+potentially infinite lists, as it avoids unnecessary computation and memory usage until necessary.
 
  
  
