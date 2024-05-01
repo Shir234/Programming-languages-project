@@ -1,10 +1,10 @@
 # Programming-languages-project
 final project: interpreter
 
-מגישים:
-שיר פלח, 206587495
-ענת קמינסקי, 303050512
-תום מנדל, 205633688
+Submitted By:
+Shir Falach 206587495
+Anat Kaminsky 303050512
+Tom Mandel 205633688
 
-חלק א: final2
-חלק ב: partB
+Part A: final2
+Part B: partB
